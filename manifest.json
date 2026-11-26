@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Octopus",
+  "version": "0.0.2",
+  "description": "Prevent accidental data leaks when sharing screenshots. 100% on-device.",
+  "permissions": ["activeTab", "scripting"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Octopus: scan & redact" },
+  "commands": {
+    "scan": {
+      "suggested_key": { "default": "Alt+Shift+S" },
+      "description": "Scan this tab for secrets and PII"
+    }
+  }
+}
